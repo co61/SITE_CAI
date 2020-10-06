@@ -1,4 +1,3 @@
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -30,14 +29,56 @@ h1,h2,h3,h4,h5,h6{
 
 }
 
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 
 
 
 /*---------------------Footer---------------------------*/
 .muted{
-  margin: 22.5px 22.5px 15px 15px;
+  margin-right: 0px;
   float: right;
-
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+.hrstyle{
+  width: 100%;
+  height: 0.5px;
+  margin-bottom: 0px;
+  color: gray;
+  background-color: gray;
+  border : solid;
+  border-radius: 10px;
+}
+.inline{
+  display: inline-block;
+}
 
 article,
 aside,
