@@ -20,14 +20,46 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 700;
 }
 
-.layout-header
-{ 
-  background-color: #0076A6;
-  opacity: 0.5;
-  width: 100%;
-  height:20%;
+.section
+{
+  background-color: #0076A680;
 
 }
+
+.header
+{ 
+  background-color: #82C11DA8 ;
+  display: flex;
+  max-height: 100px;
+  background-attachment: fixed;
+  background-blend-mode: 
+
+
+
+}
+.logo:nth-child(1)
+{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+
+}
+.logo:nth-child(2)
+{
+  max-height: 100px;
+  margin: auto;
+
+}
+.logo:nth-child(3)
+{
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  text-align: center;
+}
+
+
+
 
 .container {
   margin-right: auto;
@@ -95,10 +127,6 @@ section,
 summary {
   display: block;
 }
-
-
-
-
 
 
 
