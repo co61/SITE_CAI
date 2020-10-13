@@ -3,10 +3,10 @@
     <head>
         <!-- Head -->
         <meta charset="utf-8">
-        <title> BricoCasto - Carte</title>
+        <title> BricoCasto - Carte du magasin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../CSS/stylesheet.css" rel="stylesheet">
-        
+        <link href="../CSS/csscartemagasin.css" rel="stylesheet">
     </head>
     <body>
 
@@ -20,15 +20,23 @@
                     <p>Rayon </p>
                 </div>
             </div>
-
-        	<div class="logo">
-        		<h2>Titre</h2>
-        	</div>
-
         </header>
 
         <!-- Content -->
         <section class="layout-content">
+            <div class="container">
+                <div class="wrap">
+                   <div class="search">
+                      <input type="text" class="searchTerm" placeholder="Que recherchez-vous?">
+                      <button type="submit" class="searchButton">
+                        <p> Rechercher</p>
+                     </button>
+                   </div>
+                </div>
+                <div>
+                    <img src="../img/cartemagasin.jpg">
+                </div>
+            </div>
         </section>
 
         
@@ -38,8 +46,11 @@
             <div class="footer">
                 <div class="container">
                    <hr class="hrstyle" />
+                    <div class="float-left inline">
+                        <p id="date"></p>
+                    </div>
                     <p class="inline">BricoCasto</p>
-                    <p class="muted inline">
+                    <p class="float-right inline">
                           Jagline, Picart, Régné, Lorre &copy; 2020 - 2021
                     </p> 
                 </div>
