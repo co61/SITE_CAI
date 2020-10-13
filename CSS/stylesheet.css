@@ -86,9 +86,14 @@ h1,h2,h3,h4,h5,h6{
 
 
 /*---------------------Footer---------------------------*/
-.muted{
+.float-right{
   margin-right: 0px;
   float: right;
+}
+
+.float-left{
+  margin-right: 0px;
+  float: left;
 }
 .footer {
   position: fixed;
