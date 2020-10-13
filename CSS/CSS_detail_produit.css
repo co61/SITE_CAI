@@ -1,27 +1,4 @@
 
-/* Style the search box */
-.section input[type=text] {
-  padding: 6px;
-  margin: 20px;
-  width: 100%;
-  border: 1px solid #0076A680;
-  font-size: 17px;
-}
-
-.section .search_container button {
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background:  #82C11DA8;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.section .search_container button:hover {
-  background:  white;
-}
-
 .section{
 	display: flex;
 	flex-wrap: wrap;
@@ -42,15 +19,11 @@
 	margin: auto;
 	width:35%;
 }
-.filter .left{
-	background-color: red;
-	align-self: flex-start;
-	justify-content: flex-start;
-}
 
-.filter .right{
-	align-self: flex-end;
-	justify-content: flex-end;
+.filter .text
+{
+	display: flex;
+	justify-content: space-between;
 }
 
 
@@ -103,3 +76,83 @@
   background: #82C11DA8;
 }
 
+/*checkbox for the engine*/
+.Moteur{
+	display: flex;
+}
+.moteur{
+	display: flex;
+	margin: auto;
+}
+
+/*checkbox for the user's rate*/
+.notes{
+	display: flex;
+	flex-direction: row;
+	height:20px;
+	width: auto
+}
+.Avis{
+	display: flex;
+	flex-direction: column;
+;
+
+}
+.avis{
+	display: flex;
+	margin: auto;
+}
+
+/*display of the chainsaws*/
+.result{
+
+	display: flex;
+	justify-content: space-around;
+	background-color:  #82C11DA8;
+
+}
+.result h2{
+	color:#0076A680;
+}
+.result h3{
+	color:#82C11D;
+	text-align: center;
+}
+.result li{
+	font-size: 80%;
+}
+
+/*each results*/
+.resultat{
+	display: flex;
+	margin: 2px;
+	padding: 1px;
+	background-color: white;
+	border: 2px solid #82C11D;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+}
+
+.element{
+	display: flex;
+	max-width: 150px;
+	max-height:150px;
+	margin: auto;
+
+}
+.spec{
+	display: flex;
+	margin-left:2px;
+	margin-right:2px;
+
+}
+.carac{
+	display: flex;
+	margin: auto;
+	
+}
+
+.resultat:hover{
+	opacity:0.7;
+}

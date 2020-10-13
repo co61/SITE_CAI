@@ -30,8 +30,10 @@
                 <h4>
                     Utilisation
                 </h4>
-                <span class="left"> R</span>
-                <span class="right"> TT</span>
+                <div class="text">
+                    <span > Rare </span>
+                    <span > Tout les jours </span>
+                </div>
                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </div> 
 
@@ -39,7 +41,10 @@
                 <h4>
                     Gamme
                 </h4>
-                <span class="left">Entrée de gamme</span><span class="right">Gamme professionnelle</span>
+                <div class="text">
+                    <span > Entrée de gamme </span>
+                    <span > Gamme professionnelle </span>
+                </div>
                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </div>   
                         <div class="filter">
@@ -52,31 +57,101 @@
                 <h4>
                     Moteur
                 </h4>
+                <div class="Moteur" >
+                    <input type="checkbox" name="thermique" class="moteur"/><label for="thermique">Thermique</label>
+                    <input type="checkbox" name="electrique" class="moteur"/><label for="electrique">Electrique</label>
+                    <input type="checkbox" name="batterie" class="moteur"/><label for="batterie">Batterie</label>
+                </div>
             </div>  
 
             <div class="filter">
                 <h4>
                     Prix
                 </h4>
-                <p><span class="left">Premier prix</span><span class="right">Haut de gamme</span></p>
+                <div class="text">
+                    <span > Premier prix </span>
+                    <span > Haut de gamme </span>
+                </div>
                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </div>     
             <div class="filter">
                 <h4>
                     Avis utilisateurs
                 </h4>
-
+                <div class="notes">
+                    <div class="Avis">
+                        <input type="checkbox" class="avis" />
+                        <input type="checkbox" class="avis"/>
+                        <input type="checkbox" class="avis" />
+                        <input type="checkbox" class="avis" />
+                        <input type="checkbox" class="avis" />
+                    </div>
+                    <div class="Avis">
+                        <img src="../img/avis.png"/>
+                    </div>
+                </div>
             </div> 
-
+        <br><br><br><br><br><br><br><br>
         </section>
 
-        <section class=result>
-            <div>
-                <img 
+        <section>
+            <div class= "result">
+                <div class="resultat">
+                    <h3 class="element">Meilleur Choix</h3>
+                    <img src="../img/tronconneuse1.png"class="element" >
+                    <div class="spec">
+                        <h2 class="carac">350 €</h2>
+                        <div class="carac"> 
+                            <u1 >
+                                <li>STIHL</li>
+                                <li>Thermique</li>
+                            </u1>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="resultat">
+                    <h3 class="element">Second Meilleur Choix</h3>
+                    <img src="../img/tronconneuse2.jfif"class="element" >
+                    <div class="spec">
+                        <h2 class="carac">308 €</h2>
+                        <div class="carac"> 
+                            <u1 >
+                                <li>Makita</li>
+                                <li>Thermique</li>
+                            </u1>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="resultat">
+                    <h3 class="element">Troisième Meilleur Choix</h3>
+                    <img src="../img/tronconneuse3.jpg"class="element" >
+                    <div class="spec">
+                        <h2 class="carac">395 €</h2>
+                        <div class="carac"> 
+                            <u1 >
+                                <li>RYOBI</li>
+                                <li>Batterie</li>
+                            </u1>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="resultat">
+                    <h3 class="element">Tout Voir</h3>  
+                    </div>
+                </div>
+
+                
+
+                
             </div>
             
 
         </section>
+
+        
 
         <!-- Footer -->
         <footer class="layout-footer">
