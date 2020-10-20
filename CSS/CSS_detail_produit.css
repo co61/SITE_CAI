@@ -3,6 +3,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	background-color: #0076A680;
 }
 .filter{
 	display: flex;
@@ -32,9 +33,9 @@
 	border: 1px solid #0076A6;
 	background-color: white;
 	text-align: center;
-	padding: 10px;
-	max-width: 30%;
+	padding: 8px;
 	align-self: center;
+	flex-wrap: wrap;
 }
 
 /* The slider itself */
@@ -84,19 +85,28 @@
 	display: flex;
 	margin: auto;
 }
+.Surface label{
+	border: 1px solid #0076A6;
+	background-color: white;
+	text-align: right;
+	padding: 5px;
+	margin-right: 20px;
+}
 
 /*checkbox for the user's rate*/
 .notes{
 	display: flex;
 	flex-direction: row;
-	height:20px;
-	width: auto
+
+
 }
 .Avis{
 	display: flex;
 	flex-direction: column;
-;
-
+	width:50%;
+	height: auto;
+	margin: 10px;
+	
 }
 .avis{
 	display: flex;
@@ -105,7 +115,6 @@
 
 /*display of the chainsaws*/
 .result{
-
 	display: flex;
 	justify-content: space-around;
 	background-color:  #82C11DA8;
@@ -155,4 +164,9 @@
 
 .resultat:hover{
 	opacity:0.7;
+}
+
+
+.layout-footer {
+	position: static;
 }
