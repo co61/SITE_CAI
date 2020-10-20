@@ -10,8 +10,9 @@
         
     </head>
     <body>
+    <!-- My body contains 1 header, 1 footer and 2 sections between. Each with different divisions+ -->
 
-        <!-- Header (Menu) -->
+        <!-- Header -->
         <header class="layout-header">
             <div class="header">
                 <a href="../index.html" ><img src="../img/home.jpg" class="home"></a>
@@ -23,9 +24,23 @@
         </header>
 
         
-
         <!-- Content -->
-        <section class="section">
+
+        <!-- Mains section -->
+        <section class="section">  
+
+            <!-- Search bar -->
+            <div class="wrap">
+               <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Que recherchez-vous?">
+                    <button type="submit" class="searchButton">
+                        <p> Rechercher</p>
+                    </button>
+               </div>
+            </div>
+           
+
+            <!-- Use of materials -->
             <div class="filter">
                 <h4>
                     Utilisation
@@ -37,6 +52,7 @@
                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </div> 
 
+            <!-- Range -->
             <div class="filter">
                 <h4>
                     Gamme
@@ -47,12 +63,23 @@
                 </div>
                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </div>   
-                        <div class="filter">
+
+            <!-- Area -->
+            <div class="filter">
                 <h4>
                     Surface
                 </h4>
+                <div class="Surface">
+
+                    <label for="surface">Surface de terrain</label><input type="text" name="surface">
+                    <select name="surface" id ="surface" title="1ha = 10 000m²">
+                        <option value="m2" title="1ha = 10 000m²">m²</option>
+                        <option value="ha" title="1ha = 10 000m²">ha</option>
+                    </select>
+                </div>
             </div>     
 
+            <!-- Type of engine -->
             <div class="filter">
                 <h4>
                     Moteur
@@ -64,6 +91,7 @@
                 </div>
             </div>  
 
+            <!-- Price -->
             <div class="filter">
                 <h4>
                     Prix
@@ -74,26 +102,31 @@
                 </div>
                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </div>     
+
+            <!-- User's rate -->
             <div class="filter">
                 <h4>
                     Avis utilisateurs
                 </h4>
                 <div class="notes">
                     <div class="Avis">
-                        <input type="checkbox" class="avis" />
-                        <input type="checkbox" class="avis"/>
-                        <input type="checkbox" class="avis" />
-                        <input type="checkbox" class="avis" />
-                        <input type="checkbox" class="avis" />
+                        <input type="checkbox" class="avis" id="5" />
+                        <input type="checkbox" class="avis" id="4" />
+                        <input type="checkbox" class="avis" id="3" />
+                        <input type="checkbox" class="avis" id="2" />
+                        <input type="checkbox" class="avis" id="1" />
                     </div>
-                    <div class="Avis">
-                        <img src="../img/avis.png"/>
+                    <div >
+                        <img src="../img/avis.png" class="Avis"/>
                     </div>
                 </div>
             </div> 
-        <br><br><br><br><br><br><br><br>
+
+        <!-- end of main section -->    
         </section>
 
+
+        <!-- Results of search -->
         <section>
             <div class= "result">
                 <div class="resultat">
@@ -142,13 +175,7 @@
                     <h3 class="element">Tout Voir</h3>  
                     </div>
                 </div>
-
-                
-
-                
             </div>
-            
-
         </section>
 
         

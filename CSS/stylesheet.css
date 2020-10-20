@@ -118,7 +118,7 @@
 }
 
 .wrap{
-  margin-bottom: 20px;
+  margin: 10px;
   width: 90%;
   position: relative;
   left: 50%;
@@ -206,12 +206,15 @@ h1,h2,h3,h4,h5,h6{
 {
   height: 82%;
   width: 100%;
+  position: 
+
 }
+
 .layout-footer
 {
+  position: fixed;
   height: 5%;
   width: 100%;
-  position: fixed;
   left: 0;
   bottom: 0;
 }
