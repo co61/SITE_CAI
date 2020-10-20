@@ -18,8 +18,12 @@ function displayResult()
     }
     //else we ask to type another product
     else{
-    	alert("Veuillez taper un nom de produit valide");
+    	alert("Veuillez taper un nom de produit valide, merci.");
     }
+}
+
+function displayAlert(){
+	alert("Nous sommes désolés, les informations supplémentaires sur le produit voulu ne peut s'afficher pour le moment. Nous sommes désolés du désagrément occasionné ");
 }
 
 
