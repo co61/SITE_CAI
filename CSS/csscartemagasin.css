@@ -1,0 +1,7 @@
+ .carte img{
+ 	margin-bottom: 20px;
+	width: 90%;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+ }
