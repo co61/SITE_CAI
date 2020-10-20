@@ -1,4 +1,3 @@
-// Mon code Javascript
 let rayonpict1 = document.getElementById("rayonpict1");
 let rayonpict2 = document.getElementById("rayonpict2");
 let btnRayon = document.getElementById("btnRayon");
@@ -16,7 +15,7 @@ btnRayon.addEventListener("click", () =>
     {
         rayonpict1.src ="../img/rayon1_tondeuse.png";
         rayonpict2.src ="../img/rayon2.png";
-        
+
     }
 
     else if (document.getElementById("rechercheRayon").value == "sécateur") 
