@@ -1,0 +1,158 @@
+
+.section{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.filter{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.section .filter:nth-child(1n){
+	margin: auto;
+	width:35%;
+}
+.section .filter:nth-child(2n){
+	margin: auto;
+	width:35%;
+}
+
+.filter .text
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.filter h4
+{
+	border: 1px solid #0076A6;
+	background-color: white;
+	text-align: center;
+	padding: 10px;
+	max-width: 30%;
+	align-self: center;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 15px; /* Specified height */
+  background: white; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  margin:auto;
+  align-self: flex-end;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance:  none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+  background: #82C11DA8;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+  background: #82C11DA8;
+}
+
+/*checkbox for the engine*/
+.Moteur{
+	display: flex;
+}
+.moteur{
+	display: flex;
+	margin: auto;
+}
+
+/*checkbox for the user's rate*/
+.notes{
+	display: flex;
+	flex-direction: row;
+	height:20px;
+	width: auto
+}
+.Avis{
+	display: flex;
+	flex-direction: column;
+;
+
+}
+.avis{
+	display: flex;
+	margin: auto;
+}
+
+/*display of the chainsaws*/
+.result{
+
+	display: flex;
+	justify-content: space-around;
+	background-color:  #82C11DA8;
+
+}
+.result h2{
+	color:#0076A680;
+}
+.result h3{
+	color:#82C11D;
+	text-align: center;
+}
+.result li{
+	font-size: 80%;
+}
+
+/*each results*/
+.resultat{
+	display: flex;
+	margin: 2px;
+	padding: 1px;
+	background-color: white;
+	border: 2px solid #82C11D;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+}
+
+.element{
+	display: flex;
+	max-width: 150px;
+	max-height:150px;
+	margin: auto;
+
+}
+.spec{
+	display: flex;
+	margin-left:2px;
+	margin-right:2px;
+
+}
+.carac{
+	display: flex;
+	margin: auto;
+	
+}
+
+.resultat:hover{
+	opacity:0.7;
+}
