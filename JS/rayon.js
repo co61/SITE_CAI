@@ -1,27 +1,37 @@
+// Mon code Javascript
 let rayonpict1 = document.getElementById("rayonpict1");
 let rayonpict2 = document.getElementById("rayonpict2");
-let btnRayon = document.getElementById("btnRayon");
+let btnRechercheRayon = document.getElementById("btnRechercheRayon");
 
-btnRayon.addEventListener("click", () => 
+
+btnRechercheRayon.addEventListener("click", () => 
 {
+    updateImage();
+})
 
-    if (document.getElementById("rechercheRayon").value == "tronçonneuse") 
+function updateImage() 
+{
+     if (document.getElementById("rechercheRayon").value == "tronçonneuse") 
     {
-        rayonpict1.src ="../img/rayon1_tronconneuse.png";
-        rayonpict2.src ="../img/rayon2.png";
+        rayonpict1.src ="../img/rayons/rayon1_tronconneuse.png";
+        rayonpict2.src ="../img/rayons/rayon2.png";
     }
 
     else if (document.getElementById("rechercheRayon").value == "tondeuse") 
     {
-        rayonpict1.src ="../img/rayon1_tondeuse.png";
-        rayonpict2.src ="../img/rayon2.png";
-
+        rayonpict1.src ="../img/rayons/rayon1_tondeuse.png";
+        rayonpict2.src ="../img/rayons/rayon2.png";
     }
 
     else if (document.getElementById("rechercheRayon").value == "sécateur") 
     {
-        rayonpict2.src ="../img/rayon2_secateur.png";
-        rayonpict1.src ="../img/rayon1.png";
+        rayonpict2.src ="../img/rayons/rayon2_secateur.png";
+        rayonpict1.src ="../img/rayons/rayon1.png";
     }
 
-})
+    else
+    {
+        alert("Nous n'avons pas ce produit en stock.");
+    }
+}
+

@@ -24,26 +24,26 @@
 
         <section class="content">
             <div class="top">
-                <img src="../img/rayon1.png" alt="rayon1" class="rayonpict" id="rayonpict1">
+                <img src="../img/rayons/rayon1.png" alt="rayon1" class="rayonpict" id="rayonpict1">
                 
             </div>
 
             <div class="center">
                 <div id="localisation_borne"><img src="../img/youAreHere.png" alt="localisation_borne" id="img_loc"></div>
                 <div id="legende">
-                    <img src="../img/red_circle.png" alt="legende" align="right" class="margin_legend">
+                    <img src="../img/rayons/red_circle.png" alt="legende" align="right" class="margin_legend">
                     <p class="margin_legend">Emplacement du produit recherché</p>
                 </div>
             </div>
 
             <div class="bottom">
-                <img src="../img/rayon2.png" alt="rayon2" class="rayonpict" id="rayonpict2">
+                <img src="../img/rayons/rayon2.png" alt="rayon2" class="rayonpict" id="rayonpict2">
             </div>
 
             <div class="wrap">
                    <div class="search">
-                        <input type="text" id="rechercheRayon" onchange="update_val()" class="searchTerm" placeholder="Que recherchez-vous?">
-                        <button type="submit" class="searchButton" id="btnRayon">
+                        <input type="text" id="rechercheRayon" onkeypress="if(event.keyCode == 13) updateImage()" class="searchTerm" placeholder="Que recherchez-vous?">
+                        <button type="submit" class="searchButton" id="btnRechercheRayon">
                             <p> Rechercher</p>
                         </button>
                    </div>
@@ -74,9 +74,10 @@
         <!-- Scripts -->
         <script src="../JS/javascript.js"></script>
 
-        <!-- Scripts -->
+        
+        <script type="text/javascript" src="../JS/rayon.js"></script>    
 
-        <script type="text/javascript" src="../JS/rayon.js"></script>     
+         
 
 
     </body>
