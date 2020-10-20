@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <!-- Head -->
         <meta charset="utf-8">
@@ -24,29 +24,28 @@
 
         <!-- Content -->
         
-        <div id="conteneur_vert">
+        <div id="conteneur_vert1">
             <div id="conteneur1">
-                <div class="message">
-                    <p>Bonjour !<br/>Désirez-vous...</p>
+                <div id="conteneur_vert2">
+                    <a href="#fr" data-reload>Français</a>
+                    <a href="#en" data-reload>English</a>
                 </div>
+                <p id="message">Bonjour !<br/>Désirez-vous...</p>
             </div>
 
             <div id="conteneur2">
-                <div class="carte_rayon">
-                    <a href="src/carte_rayon.html">La disposition du rayon</a>
-                </div>
-
-                <div class="detail_produit">
-                    <a href="src/detail_produit.html">Trouver LE meilleur produit</a>
-                </div>
+                <a id="carte_rayon", href="src/carte_rayon.html">La disposition du rayon</a>
+                <a id="detail_produit", href="src/detail_produit.html">Trouver LE meilleur produit</a>
             </div>
 
             <div id="conteneur3">
-                <div class="carte_magasin">
-                    <a href="src/carte_magasin.html">Carte du Magasin</a>
-                </div>
+                <a id="carte_magasin", href="src/carte_magasin.html">Carte du Magasin</a>
             </div>
         </div>
+
+        <!-- Script -->
+
+        <script src="./JS/JS_accueuil.js" ></script>
         
         <!-- Footer -->
         <footer class="layout-footer">  
