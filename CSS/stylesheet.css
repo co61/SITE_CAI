@@ -205,11 +205,10 @@ h1,h2,h3,h4,h5,h6{
 
 .layout-content
 {
-  background: #0076A680;
+
   height: 83%;
   width: 100%;
-  position: 
-
+  background-color: #0076A680;
 }
 
 .layout-footer
