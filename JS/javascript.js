@@ -9,8 +9,6 @@ document.getElementById("date").innerHTML = d.getDate()+"/"+(d.getMonth()+1)+"/"
 
 function Choix(form) {
 	let carte_magasin_img = document.getElementById("carte_magasin_img");
-	let btn_recherche_liste = document.getElementById("btn_recherche_liste");
-	btn_recherche_liste.style = "visibility: hidden;"
 	i = form.Rayon.selectedIndex;
 	if (i == 0) {
 	  return;
@@ -33,12 +31,26 @@ function Choix(form) {
 		case 8 : var txt = new Array ('Marteau','Perçeuse','Caisse à outils'); 
 			carte_magasin_img.src="../img/carte_magasin_img/carte_magasin_yah_outillage.jpg";break;
 		case 9 : var txt = new Array ('Tronçonneuse','Tondeuse','Sécateur'); 
-			btn_recherche_liste.style = "visibility: visible;"
 			carte_magasin_img.src="../img/carte_magasin_img/carte_magasin_yah_jardin.jpg";break;
 	}
+	form.produit.selectedIndex=0;
 	for (i=0;i<3;i++) {
 	  form.produit.options[i+1].text=txt[i];
 	  }
+}
+
+function Trouver_btn_aff(form) {
+	let btn_recherche_liste = document.getElementById("btn_recherche_liste");
+	j = form.produit.selectedIndex;
+	let carte_magasin_img = document.getElementById("carte_magasin_img");
+	i = form.Rayon.selectedIndex;
+	if(j>0 && i==9){
+		btn_recherche_liste.style = "visibility: visible;";
+	}else{
+		btn_recherche_liste.style = "visibility: hidden;";
+	}
+	
+
 }
 
 
