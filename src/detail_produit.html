@@ -30,12 +30,9 @@
         <section class="section">  
 
             <!-- Search bar -->
-            <div class="wrap">
-               <div class="search">
-                    <input type="text" class="searchTerm" placeholder="Que recherchez-vous?">
-                    <button type="submit" class="searchButton">
-                        <p> Rechercher</p>
-                    </button>
+            <div class="wrap" >
+               <div class="search" >
+                    <input type="text" class="searchTerm" placeholder="Que recherchez-vous?" id="rechercheProduit">
                </div>
             </div>
            
@@ -121,6 +118,11 @@
                     </div>
                 </div>
             </div> 
+            <div class="filter">
+                <button type="submit" class="research" id="productsearch" onclick="displayResult() ">
+                        <p> Rechercher</p>
+                </button>
+            </div>
 
         <!-- end of main section -->    
         </section>
@@ -129,7 +131,7 @@
         <!-- Results of search -->
         <section>
             <div class= "result">
-                <div class="resultat">
+                <div class="resultat" >
                     <h3 class="element">Meilleur Choix</h3>
                     <img src="../img/tronconneuse1.png"class="element" >
                     <div class="spec">
@@ -143,7 +145,7 @@
                     </div>
                 </div>
 
-                <div class="resultat">
+                <div class="resultat" >
                     <h3 class="element">Second Meilleur Choix</h3>
                     <img src="../img/tronconneuse2.jfif"class="element" >
                     <div class="spec">
@@ -157,7 +159,7 @@
                     </div>
                 </div>
 
-                <div class="resultat">
+                <div class="resultat" >
                     <h3 class="element">Troisième Meilleur Choix</h3>
                     <img src="../img/tronconneuse3.jpg"class="element" >
                     <div class="spec">
@@ -171,7 +173,7 @@
                     </div>
                 </div>
 
-                <div class="resultat">
+                <div class="resultat" >
                     <h3 class="element">Tout Voir</h3>  
                     </div>
                 </div>
@@ -197,8 +199,8 @@
         </footer>
 
         <!-- Scripts -->
-        <script src="../JS/javascript.js"></script>        
+      
 
-
+        <script type="text/javascript" src="../JS/JS_product.js"></script>
     </body>
 </html>

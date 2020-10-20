@@ -7,7 +7,6 @@ var d = new Date();
 document.getElementById("date").innerHTML = d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear();
 
 
-
 function Choix(form) {
 	let carte_magasin_img = document.getElementById("carte_magasin_img");
 	let btn_recherche_liste = document.getElementById("btn_recherche_liste");
@@ -73,3 +72,4 @@ function recherche_execute(){
     	alert("Nous n'avons pas cet article pour le moment");
     }
 }
+

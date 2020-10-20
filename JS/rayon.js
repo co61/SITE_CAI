@@ -15,6 +15,7 @@ btnRayon.addEventListener("click", () =>
     {
         rayonpict1.src ="../img/rayon1_tondeuse.png";
         rayonpict2.src ="../img/rayon2.png";
+
     }
 
     else if (document.getElementById("rechercheRayon").value == "sécateur") 
