@@ -16,7 +16,7 @@
                 <a href="../index.html" ><img src="../img/home.jpg" class="home"></a>
                 <img src="../img/BricoCasto.png" class="logo">
                 <div class="rayon" >
-                    <h3>Rayon Electricité</h3>
+                    <h3>Rayon Jardin</h3>
                 </div>
             </div>
         </header>
@@ -25,25 +25,38 @@
         <section class="layout-content">
             <div class="container">
                 <div class="found">
-                    <select name="Rayon" onChange='Choix(this.form)'>
-                    <option>-- Choisissez une rubrique ---</option>
-                    <option>Quincaillerie</option>
-                    <option>Droguerie</option>
-                    <option>Electricité</option>
-                    <option>Plomberie</option>
-                    <option>Sanitaire</option>
-                    <option>Electricité</option>
-                    <option>Electricité</option>
-                    </select>
+                    <form style="width: 100%">
+                        <select name="Rayon" onChange='Choix(this.form)' style="width: 100%">
+                            <option>Rayon ?  Choisissez !</option>
+                            <option>Quincaillerie</option>
+                            <option>Droguerie</option>
+                            <option>Electricité</option>
+                            <option>Plomberie</option>
+                            <option>Sanitaire</option>
+                            <option>Peinture</option>
+                            <option>Luminaire</option>
+                            <option>Outillage</option>
+                            <option>Jardin</option>
+                        </select>
+
+                        <select name="produit" style="width: 100%">
+                            <option>Produit ?  Choisissez !</option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                        <button id="btn_recherche_liste" style="visibility: hidden;"><a href="../src/carte_rayon.html" style="text-decoration: none;">Trouver</a></button>
+                    </form>
                 </div>
+
                 <div class="wrap">
                    <div class="search">
-                        <input type="text" class="searchTerm" placeholder="Que recherchez-vous?">
-                        <button type="submit" class="searchButton" ><p>Rechercher</p></button>
+                        <input type="text" class="searchTerm" placeholder="Que recherchez-vous?" id="recherche_magasin" onkeypress="if(event.keyCode==13){recherche_execute()}">
+                        <button type="submit" class="searchButton" id="btn_recherche_magasin" ><p>Rechercher</p></button>
                    </div>
                 </div>
                 <div class="carte">
-                    <img src="../img/cartemagasin.jpg">
+                    <img src="../img/carte_magasin_img/carte_magasin_yah.jpg" id="carte_magasin_img">
                 </div>
                 
 

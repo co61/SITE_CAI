@@ -16,11 +16,12 @@
 
 .wrap{
 	margin-top: 0;
-	
+
 }
 
 .found{
+	width: 10%;
 	position: absolute;
 	top:20%;
-	left : 5%;
+	left : 0.5%;
 }
