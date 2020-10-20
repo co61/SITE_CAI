@@ -6,40 +6,74 @@
         <title> BricoCasto - Rayon</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../CSS/stylesheet.css" rel="stylesheet">
-        
+        <link href="../CSS/carte_rayon.css" rel="stylesheet">
     </head>
+
     <body>
 
         <!-- Header (Menu) -->
         <header class="layout-header">
             <div class="header">
-                <a href="../index.html" ><img src="../img/home.jpg" class="logo"></a>
+                <a href="../index.html" ><img src="../img/home.jpg" class="home"></a>
                 <img src="../img/BricoCasto.png" class="logo">
-                <div class="logo">
-                    <h3>Rayon Electricité</h3>
+                <div class="rayon">
+                    <h3>Rayon Entretien Terrain</h3>
                 </div>
             </div>
         </header>
 
-        <!-- Content -->
-        <section class="layout-content">
+        <section class="content">
+            <div class="top">
+                <img src="../img/rayon1.png" alt="rayon1" class="rayonpict">
+                
+            </div>
+
+            <div class="center">
+                <div id="localisation_borne"><img src="../img/youAreHere.png" alt="localisation_borne"></div>
+                <div id="legende">
+                    <img src="../img/red_circle.png" alt="legende" align="right" class="margin_legend">
+                    <p class="margin_legend">Emplacement du produit recherché</p>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <img src="../img/rayon2.png" alt="rayon2" class="rayonpict">
+            </div>
+
+            <div class="wrap">
+                   <div class="search">
+                        <input type="text" class="searchTerm" placeholder="Que recherchez-vous?">
+                        <button type="submit" class="searchButton">
+                            <p> Rechercher</p>
+                        </button>
+                   </div>
+                </div>
+            
+
+
         </section>
+
 
         <!-- Footer -->
         <footer class="layout-footer">  
             <div class="footer">
                 <div class="container">
                    <hr class="hrstyle" />
+                    <div class="float-left inline">
+                        <p id="date"></p>
+                    </div>
                     <p class="inline">BricoCasto</p>
-                    <p class="muted inline">
+                    <p class="float-right inline">
                           Jagline, Picart, Régné, Lorre &copy; 2020 - 2021
                     </p> 
                 </div>
             </div>
         </footer>
 
-        <!-- Scripts -->
-        
+
+
+
+
 
     </body>
 </html>
