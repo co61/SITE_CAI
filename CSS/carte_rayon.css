@@ -55,36 +55,16 @@
 
 }
 
-.inputField
-{
-	/*background-color: #ebde34;*/
-	display: flex;
-	justify-content: space-around;
-}
 
-.rayon
+
+.rayonpict
 {
 	margin: 10px;
 }
 
 
 
-input
-{ 
-	text-align: center;
-    margin: 20px; 
-    height: 20px; 
-    width: 500px; 
-    border:1px solid #eaeaea; 
- 
-} 
- 
-input:hover
-{ 
- 
-    border-color: #82C11DA8 #82C11DA8 #82C11DA8 #82C11DA8; 
- 
-} 
+
 
 
 
