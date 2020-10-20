@@ -1,17 +1,21 @@
-
+/*everything in the page between the header and the footer is in this section/*/
 .section{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	background-color: #0076A680;
 }
+
+
+
+/*contains different types of filter*/
 .filter{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	flex-direction: column;
 }
-
+/*we display them by column of 2 filters*/
 .section .filter:nth-child(1n){
 	margin: auto;
 	width:35%;
@@ -27,7 +31,6 @@
 	justify-content: space-between;
 }
 
-
 .filter h4
 {
 	border: 1px solid #0076A6;
@@ -38,6 +41,8 @@
 	flex-wrap: wrap;
 }
 
+
+
 /* The slider itself */
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
@@ -46,7 +51,7 @@
   height: 15px; /* Specified height */
   background: white; /* Grey background */
   outline: none; /* Remove outline */
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
   transition: opacity .2s;
   margin:auto;
@@ -77,6 +82,8 @@
   background: #82C11DA8;
 }
 
+
+
 /*checkbox for the engine*/
 .Moteur{
 	display: flex;
@@ -93,25 +100,54 @@
 	margin-right: 20px;
 }
 
+
+
 /*checkbox for the user's rate*/
 .notes{
 	display: flex;
 	flex-direction: row;
-
-
 }
+
 .Avis{
 	display: flex;
 	flex-direction: column;
 	width:50%;
 	height: auto;
 	margin: 10px;
-	
 }
+
 .avis{
 	display: flex;
 	margin: auto;
 }
+
+
+
+/*submit button*/
+.research {
+  width: 100%;
+  height: auto;
+  border: 2px solid #000;
+  padding: 2px;
+  background: #F5F5F5;
+  text-align: center
+  cursor: pointer;
+  outline: none;
+  font-size: 110%;
+  border-radius: 10px;
+}
+
+.research:hover {
+  background-color: #C0C0C0 ;
+} 
+
+
+.searchTerm {
+  border: 3px solid #000;
+ }
+
+
+
 
 /*display of the chainsaws*/
 .result{
@@ -150,6 +186,7 @@
 	margin: auto;
 
 }
+
 .spec{
 	display: flex;
 	margin-left:2px;
@@ -167,28 +204,4 @@
 }
 
 
-.layout-footer {
-	position: static;
-}
 
-.research {
-  width: 100%;
-  height: auto;
-  border: 2px solid #000;
-  padding: 2px;
-  background: #F5F5F5;
-  text-align: center
-  cursor: pointer;
-  outline: none;
-  font-size: 110%;
-  border-radius: 10px;
-}
-
-.research:hover {
-  background-color: #C0C0C0 ;
-} 
-
-
-.searchTerm {
-  border: 3px solid #000;
- }
