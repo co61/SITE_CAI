@@ -3,44 +3,86 @@
     <head>
         <!-- Head -->
         <meta charset="utf-8">
-        <title> BricoCasto - Carte</title>
+        <title> BricoCasto - Carte du magasin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../CSS/stylesheet.css" rel="stylesheet">
-        
+        <link href="../CSS/csscartemagasin.css" rel="stylesheet">
     </head>
     <body>
 
         <!-- Header (Menu) -->
         <header class="layout-header">
-
             <div class="header">
-                <a href="../index.html" ><img src="../img/home.jpg" class="logo"></a>
+                <a href="../index.html" ><img src="../img/home.jpg" class="home"></a>
                 <img src="../img/BricoCasto.png" class="logo">
-                <div class="logo" style="visibility: hidden;">
-                    <p>Rayon </p>
+                <div class="rayon" >
+                    <h3>Rayon Jardin</h3>
                 </div>
             </div>
-
-        	<div class="logo">
-        		<h2>Titre</h2>
-        	</div>
-
         </header>
 
         <!-- Content -->
         <section class="layout-content">
+            <div class="container">
+                <div class="found">
+                    <form style="width: 100%">
+                        <select name="Rayon" onChange='Choix(this.form)' style="width: 100%">
+                            <option>Rayon ?  Choisissez !</option>
+                            <option>Quincaillerie</option>
+                            <option>Droguerie</option>
+                            <option>Electricité</option>
+                            <option>Plomberie</option>
+                            <option>Sanitaire</option>
+                            <option>Peinture</option>
+                            <option>Luminaire</option>
+                            <option>Outillage</option>
+                            <option>Jardin</option>
+                        </select>
+
+                        <select name="produit" onChange='Trouver_btn_aff(this.form)' style="width: 100%">
+                            <option>Produit ?  Choisissez !</option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                        <button id="btn_recherche_liste" style="visibility: hidden;"><a href="../src/carte_rayon.html" style="text-decoration: none;">Trouver</a></button>
+                    </form>
+                </div>
+
+                <div class="wrap">
+                   <div class="search">
+                        <input type="text" class="searchTerm" placeholder="Que recherchez-vous?" id="recherche_magasin" onkeypress="if(event.keyCode==13){recherche_execute()}">
+                        <button type="submit" class="searchButton" id="btn_recherche_magasin" ><p>Rechercher</p></button>
+                   </div>
+                </div>
+                <div class="carte">
+                    <img src="../img/carte_magasin_img/carte_magasin_yah.jpg" id="carte_magasin_img">
+                </div>
+                
+
+            </div>
         </section>
 
         
 
         <!-- Footer -->
-        <footer class="layout-footer">
-        	<p class="muted credit">
-        		Jagline, Picart, Régné, Lorre &copy; 2020 - 2021
-        	</p>
+        <footer class="layout-footer">  
+            <div class="footer">
+                <div class="container">
+                   <hr class="hrstyle" />
+                    <div class="float-left inline">
+                        <p id="date"></p>
+                    </div>
+                    <p class="inline">BricoCasto</p>
+                    <p class="float-right inline">
+                          Jagline, Picart, Régné, Lorre &copy; 2020 - 2021
+                    </p> 
+                </div>
+            </div>
         </footer>
 
         <!-- Scripts -->
+        <script src="../JS/javascript.js"></script>
         
 
     </body>

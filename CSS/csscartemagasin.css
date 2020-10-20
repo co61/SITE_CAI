@@ -1,0 +1,27 @@
+.carte {
+	width: auto;
+	height: 90%;
+}
+.carte img{
+	width: auto;
+	height: 100%;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+
+}
+.layout-content .container{
+	padding-top: 10px;
+}
+
+.wrap{
+	margin-top: 0;
+
+}
+
+.found{
+	width: 10%;
+	position: absolute;
+	top:20%;
+	left : 0.5%;
+}

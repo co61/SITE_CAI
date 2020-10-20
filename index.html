@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <!-- Head -->
         <meta charset="utf-8">
         <title> BricoCasto - Accueil</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./CSS/stylesheet.css" rel="stylesheet">
+        <link href="./CSS/css_accueil.css" rel="stylesheet">
         
     </head>
     <body>
@@ -13,42 +14,61 @@
         <!-- Header (Menu) -->
         <header class="layout-header">
             <div class="header">
-                <img src="../img/home.jpg" class="logo" style="display: none;"></a>
+
+
+                <a href="./index.html" ><img src="./img/home.jpg" class="home" style="visibility: hidden;"></a>
+
+
                 <img src="./img/BricoCasto.png" class="logo">
-                <div class="logo" style="display: none;">
-                    <p>Rayon </p>
+                <div class="rayon" style="visibility: hidden;" >
+                    <h3>Rayon Electricité</h3>
                 </div>
             </div>
-
         </header>
 
         <!-- Content -->
-        <section class="section">
-            <div>
-                <u1>
-                    <li><a href="src/carte_magasin.html">Carte du Magasin</a></li>
-                    <li><a href="src/carte_rayon.html">Carte du Rayon Actuel</a></li>
-                    <li><a href="src/detail_produit.html">Conseil Achat produit adapté</a></li>
-                </u1>
-
+        
+        <div id="conteneur_vert1">
+            <div id="conteneur1">
+                <div id="conteneur_vert2">
+                    <a href="#fr" data-reload>Français</a>
+                    <a href="#en" data-reload>English</a>
+                </div>
+                <p id="message">Bonjour !<br/>Désirez-vous...</p>
             </div>
-        </section>
 
+            <div id="conteneur2">
+                <a id="carte_rayon", href="src/carte_rayon.html">La disposition du rayon</a>
+                <a id="detail_produit", href="src/detail_produit.html">Trouver LE meilleur produit</a>
+            </div>
+
+            <div id="conteneur3">
+                <a id="carte_magasin", href="src/carte_magasin.html">Carte du Magasin</a>
+            </div>
+        </div>
+
+        <!-- Script -->
+
+        <script src="./JS/JS_accueil.js" ></script>
+        
         <!-- Footer -->
         <footer class="layout-footer">  
             <div class="footer">
                 <div class="container">
                    <hr class="hrstyle" />
+                    <div class="float-left inline">
+                        <p id="date"></p>
+                    </div>
                     <p class="inline">BricoCasto</p>
-                    <p class="muted inline">
-                          Jagline, Picart, Régné, Lorre &copy; 2020 - 2021
+                    <p class="float-right inline">
+                          Jagline, Picart, Régné, Lorre &copy; CAI 2020 - 2021
                     </p> 
                 </div>
             </div>
         </footer>
 
         <!-- Scripts -->
-        
+        <script src="./JS/javascript.js"></script>
 
     </body>
 </html>
