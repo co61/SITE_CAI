@@ -1,14 +1,7 @@
-
-
-/* A ENLEVER CAR GERE PAR CORENTIN NORMALEMENT */
-
-
-
-
 .content
 {
 	background-color: #0076A680;
-	height: 77%;
+	height: 83%;
 	display: flex;
 	flex-direction: column;
 }
@@ -19,18 +12,30 @@
 	flex-grow: 2;
     justify-content: space-around;
     /*background-color: #57171e;*/
+    height: 40%;
 }
 
 .center
 {
 	display: flex;
+	height: 30%;
+	width: 100%;
 }
 
 #localisation_borne
 {
 	/*background-color: #ad39a2;*/
-	flex-basis: 50%;
-	margin-left: 10%;
+	width: 50%;
+	display: flex;
+
+}
+
+#img_loc
+{
+	margin-left: 30%;
+	margin-bottom: 2%;
+	height: 75%;
+	align-self: flex-end;
 }
 
 #legende
@@ -38,6 +43,7 @@
 	/*background-color: #39ad98;*/
 	flex-basis: 50%;
 	text-align: right;
+	width: 50%;
 }
 
 .margin_legend
@@ -52,14 +58,21 @@
 	flex-grow: 2;
 	/*background-color: #ebb434;*/
 	justify-content: space-around;
-
+	height: 40%;
 }
 
 
 
 .rayonpict
 {
-	margin: 10px;
+	
+	width: 65%;
+	height: 90%;
+}
+
+.wrap
+{
+	height: 10%;
 }
 
 
