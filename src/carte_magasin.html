@@ -15,7 +15,7 @@
             <div class="header">
                 <a href="../index.html" ><img src="../img/home.jpg" class="home"></a>
                 <img src="../img/BricoCasto.png" class="logo">
-                <div class="rayon" style="visibility: hidden;" >
+                <div class="rayon" >
                     <h3>Rayon Electricité</h3>
                 </div>
             </div>
@@ -24,17 +24,29 @@
         <!-- Content -->
         <section class="layout-content">
             <div class="container">
+                <div class="found">
+                    <select name="Rayon" onChange='Choix(this.form)'>
+                    <option>-- Choisissez une rubrique ---</option>
+                    <option>Quincaillerie</option>
+                    <option>Droguerie</option>
+                    <option>Electricité</option>
+                    <option>Plomberie</option>
+                    <option>Sanitaire</option>
+                    <option>Electricité</option>
+                    <option>Electricité</option>
+                    </select>
+                </div>
                 <div class="wrap">
                    <div class="search">
                         <input type="text" class="searchTerm" placeholder="Que recherchez-vous?">
-                        <button type="submit" class="searchButton">
-                            <p> Rechercher</p>
-                        </button>
+                        <button type="submit" class="searchButton" ><p>Rechercher</p></button>
                    </div>
                 </div>
                 <div class="carte">
-                    <img src="../img/cartemagasin.jpg" width="auto" height="100%">
+                    <img src="../img/cartemagasin.jpg">
                 </div>
+                
+
             </div>
         </section>
 
@@ -44,7 +56,7 @@
         <footer class="layout-footer">  
             <div class="footer">
                 <div class="container">
-                    <hr class="hrstyle" />
+                   <hr class="hrstyle" />
                     <div class="float-left inline">
                         <p id="date"></p>
                     </div>
@@ -57,6 +69,7 @@
         </footer>
 
         <!-- Scripts -->
+        <script src="../JS/javascript.js"></script>
         
 
     </body>

@@ -1,0 +1,106 @@
+/* ------------------------------------------------------ Taff de CL -----------------------------------------------------*/
+
+#conteneur_vert1
+{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+#conteneur1
+{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+#conteneur_vert2
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+#conteneur2
+{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+#conteneur3
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+#message
+{
+  background-color : #F70808;
+  width : 300px;
+  height: 110px;
+  padding-top: 35px;
+  text-align: center;
+  border-radius: 10px;
+
+  font-family: sans-serif;
+  color : white;
+  font-size : 30px;
+  margin: auto;
+}
+
+#carte_rayon
+{
+  background-color: #43F80E;
+  width : 400px;
+  height : 80px;
+  padding-top : 40px;
+  text-align: center;
+  border : 4px black groove;
+  border-radius: 10px;
+
+  color : white;
+  font-size : 30px;
+  text-decoration: none;
+  margin : auto;
+}
+
+#detail_produit
+{
+  background-color: #1C6C05;
+  width : 400px;
+  height : 80px;
+  padding-top : 40px;
+  text-align: center;
+  border : 4px black groove;
+  border-radius: 10px;
+
+  color: white;
+  font-size : 30px;
+  text-decoration: none;
+  margin : auto;
+}
+
+#carte_magasin
+{
+  background-color : #2AFBF8;
+  width : 300px;
+  height: 50px;
+  padding-top: 15px;
+  text-align: center;
+  border : 4px black groove;
+  border-radius: 10px;
+
+  color : black;
+  font-size : 30px;
+  text-decoration: none;
+  margin : auto;
+}
+
+body
+{
+  background-color: #0076A680;
+}
+
+/* ------------------------------------------------------ Fin taff de CL -----------------------------------------------------*/
