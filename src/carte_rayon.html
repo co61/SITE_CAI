@@ -14,6 +14,8 @@
     <body>
 
         <!-- Header (Menu)   Commun à toutes les pages-->
+        <!-- Concepteurs : Corentin Régné(correction pour dynamisme) et Lénaël Jagline  -->
+        <!-- affichage (ou non) et lien de Home, BricoCasto et le nom du rayon -->
         <header class="layout-header">
             <div class="header">
                 <a href="../index.html" ><img src="../img/home.jpg" class="home"></a>
@@ -51,7 +53,7 @@
 
             <div class="wrap">  <!-- div correspondant à la box contenant la barre de recherche (créée par Corentin Régné)  -->
                    <div class="search">
-                        <input type="text" id="rechercheRayon" onkeypress="if(event.keyCode == 13) updateImage()" class="searchTerm" placeholder="Que recherchez-vous?"> <!-- rajout de ma part d'un appel à la fct updateImage() lorsqula touche entrée est pressée -->
+                        <input type="text" id="rechercheRayon" onkeypress="if(event.keyCode == 13) updateImage()" class="searchTerm" placeholder="Que recherchez-vous?"> <!-- rajout de ma part d'un appel à la fct updateImage() lorsque la touche entrée est pressée -->
                         <button type="submit" class="searchButton" id="btnRechercheRayon">
                             <p> Rechercher</p>
                         </button>
@@ -64,6 +66,9 @@
 
 
         <!-- Footer commun à toutes les pages-->  
+        <!-- Concepteur : Corentin Régné -->
+        <!-- footer dynamique mais comprotant des limites pour la taille de fenêtre, affichage de la date, du nom du magasin, des noms des developpeurs
+         et de l'année de construction de l'interface -->
         <footer class="layout-footer">  
             <div class="footer">
                 <div class="container">
