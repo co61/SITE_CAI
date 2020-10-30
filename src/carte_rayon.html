@@ -1,3 +1,5 @@
+<!-- carte_rayon.html -- Thibaut Picart -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,13 +7,15 @@
         <meta charset="utf-8">
         <title> BricoCasto - Rayon</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="../CSS/stylesheet.css" rel="stylesheet">
+        <link href="../CSS/stylesheet.css" rel="stylesheet">  <!-- fichier CSS global + celui spécifique à ma page -->
         <link href="../CSS/carte_rayon.css" rel="stylesheet">
     </head>
 
     <body>
 
-        <!-- Header (Menu) -->
+        <!-- Header (Menu)   Commun à toutes les pages-->
+        <!-- Concepteurs : Corentin Régné(correction pour dynamisme) et Lénaël Jagline  -->
+        <!-- affichage (ou non) et lien de Home, BricoCasto et le nom du rayon -->
         <header class="layout-header">
             <div class="header">
                 <a href="../index.html" ><img src="../img/home.jpg" class="home"></a>
@@ -22,28 +26,35 @@
             </div>
         </header>
 
-        <section class="content">
-            <div class="top">
-                <img src="../img/rayon1.png" alt="rayon1" class="rayonpict" id="rayonpict1">
-                
+        <section class="content">  <!-- Content correspont à tout ce qui ce trouve entre le header et le footer -->
+            <div class="top"> <!-- content est divisé en plusieurs cases pour la disposition des éléments sur l'écran -->
+                <img src="../img/rayons/rayon1.png" alt="rayon1" id="rayonpict1">   
             </div>
 
             <div class="center">
-                <div id="localisation_borne"><img src="../img/youAreHere.png" alt="localisation_borne" id="img_loc"></div>
+                <div id="localisation_borne"><img src="../img/youAreHere.png" alt="localisation_borne" id="img_loc"></div> <!-- le center contient la       localisation du client ainsi que la légende -->
                 <div id="legende">
-                    <img src="../img/red_circle.png" alt="legende" align="right" class="margin_legend">
+                    <img src="../img/rayons/red_circle.png" alt="legende" align="right" class="margin_legend">
                     <p class="margin_legend">Emplacement du produit recherché</p>
                 </div>
             </div>
 
-            <div class="bottom">
-                <img src="../img/rayon2.png" alt="rayon2" class="rayonpict" id="rayonpict2">
+            <div class="bottom"> <!-- le bottom est lui meme redivisé en 3 box (pour insertion du bouton liant à la page détail produit) -->
+                <div class="bottom_side">
+                    <button id="voirDescriptif" style="visibility: hidden;"><a href="../src/detail_produit.html" style="text-decoration: none;">Voir le descriptif détaillé</a></button>  <!-- bouton caché de base, avec lien vers la bonne page -->
+                </div>
+                <div class="bottom_center">
+                    <img src="../img/rayons/rayon2.png" alt="rayon2" id="rayonpict2">  
+                </div>
+                <div class="bottom_side">
+                    <p></p>  <!-- div vide mais nécessaire pour la bonne disposition des éléments -->
+                </div>
             </div>
 
-            <div class="wrap">
+            <div class="wrap">  <!-- div correspondant à la box contenant la barre de recherche (créée par Corentin Régné)  -->
                    <div class="search">
-                        <input type="text" id="rechercheRayon" onchange="update_val()" class="searchTerm" placeholder="Que recherchez-vous?">
-                        <button type="submit" class="searchButton" id="btnRayon">
+                        <input type="text" id="rechercheRayon" onkeypress="if(event.keyCode == 13) updateImage()" class="searchTerm" placeholder="Que recherchez-vous?"> <!-- rajout de ma part d'un appel à la fct updateImage() lorsque la touche entrée est pressée -->
+                        <button type="submit" class="searchButton" id="btnRechercheRayon">
                             <p> Rechercher</p>
                         </button>
                    </div>
@@ -54,7 +65,10 @@
         </section>
 
 
-        <!-- Footer -->
+        <!-- Footer commun à toutes les pages-->  
+        <!-- Concepteur : Corentin Régné -->
+        <!-- footer dynamique mais comprotant des limites pour la taille de fenêtre, affichage de la date, du nom du magasin, des noms des developpeurs
+         et de l'année de construction de l'interface -->
         <footer class="layout-footer">  
             <div class="footer">
                 <div class="container">
@@ -74,9 +88,10 @@
         <!-- Scripts -->
         <script src="../JS/javascript.js"></script>
 
-        <!-- Scripts -->
+        
+        <script type="text/javascript" src="../JS/rayon.js"></script>  <!-- lien vers le js commun ainsi que le mien -->   
 
-        <script type="text/javascript" src="../JS/rayon.js"></script>     
+         
 
 
     </body>

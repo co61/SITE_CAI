@@ -1,3 +1,6 @@
+/*Concepteur Corentin Réngé */
+
+/*adaptation dinamique de l'image carte du magasin, centrage sur la page*/
 .carte {
 	width: auto;
 	height: 90%;
@@ -10,17 +13,21 @@
 	transform: translate(-50%);
 
 }
+/*positionnement du form et des selects*/
+.found{
+	width: 10%;
+	position: absolute;
+	top:20%;
+	left : 0.5%;
+}
+
+/*surimplémentation pour enlever certains padding ou margin */
 .layout-content .container{
 	padding-top: 10px;
 }
 
 .wrap{
 	margin-top: 0;
-	
+
 }
 
-.found{
-	position: absolute;
-	top:20%;
-	left : 5%;
-}
