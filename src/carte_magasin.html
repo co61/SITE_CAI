@@ -11,12 +11,14 @@
     <body>
 
         <!-- Header (Menu) -->
+        <!-- Concepteurs : Corentin Régné(correction pour dynamisme) et Lénaël Jagline  -->
+        <!-- affichage (ou non) et lien de Home, BricoCasto et le nom du rayon -->
         <header class="layout-header">
             <div class="header">
                 <a href="../index.html" ><img src="../img/home.jpg" class="home"></a>
                 <img src="../img/BricoCasto.png" class="logo">
                 <div class="rayon" >
-                    <h3>Rayon Jardin</h3>
+                    <h3>Rayon Entretien du jardin</h3>
                 </div>
             </div>
         </header>
@@ -24,6 +26,8 @@
         <!-- Content -->
         <section class="layout-content">
             <div class="container">
+                <!-- création d'une div form avec des select pour porposer le choix du rayon et d'un produit
+                le deuxieme select est remplis par la fonction js Choix() en fonction du rayon choisi -->
                 <div class="found">
                     <form style="width: 100%">
                         <select name="Rayon" onChange='Choix(this.form)' style="width: 100%">
@@ -38,23 +42,26 @@
                             <option>Outillage</option>
                             <option>Jardin</option>
                         </select>
-
+                        <!-- La fonction Trouver_btn_aff() est appelé pour afficher le bouton "trouver" si les conditions sont remplies  -->
                         <select name="produit" onChange='Trouver_btn_aff(this.form)' style="width: 100%">
                             <option>Produit ?  Choisissez !</option>
                             <option></option>
                             <option></option>
                             <option></option>
                         </select>
-                        <button id="btn_recherche_liste" style="visibility: hidden;"><a href="../src/carte_rayon.html" style="text-decoration: none;">Trouver</a></button>
+                        <!-- visibility est controlé par la fonction Trouver_btn_aff() mais par defaut hidden -->
+                        <button id="btn_recherche_liste" style="visibility: hidden;"><a href="../src/carte_rayon.html"  style="text-decoration: none;">Trouver</a></button>
                     </form>
                 </div>
-
+                <!-- champ de recherche conçu par Corentin Régné, inspiré de plusieurs exemple sur le net dont w3schools.com  -->
                 <div class="wrap">
                    <div class="search">
                         <input type="text" class="searchTerm" placeholder="Que recherchez-vous?" id="recherche_magasin" onkeypress="if(event.keyCode==13){recherche_execute()}">
+                        <!-- rajout de la part de Thibaut Rolland d'un appel à la fct updateImage() lorsque la touche entrée est pressée ou le bouton search appuyé -->
                         <button type="submit" class="searchButton" id="btn_recherche_magasin" ><p>Rechercher</p></button>
                    </div>
                 </div>
+                <!-- affichage de la carte, la src de l'image peut etre modifié par la fonction js Choix() -->
                 <div class="carte">
                     <img src="../img/carte_magasin_img/carte_magasin_yah.jpg" id="carte_magasin_img">
                 </div>
@@ -66,6 +73,9 @@
         
 
         <!-- Footer -->
+        <!-- Concepteur : Corentin Régné -->
+        <!-- footer dynamique mais comprotant des limites pour la taille de fenêtre, affichage de la date, du nom du magasin, des noms des developpeurs
+         et de l'année de construction de l'interface -->
         <footer class="layout-footer">  
             <div class="footer">
                 <div class="container">

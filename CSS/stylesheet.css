@@ -1,6 +1,5 @@
 /*---------------------header---------------------------*/
-
-
+/*Concepteur Corentin Réngé et Lénaël Jagline*/
 .header
 { 
   height: 100%;
@@ -44,7 +43,7 @@
 
 /*---------------------fin header---------------------------*/
 
-
+/*Concepteur Corentin Réngé*/
 
 .container {
   height: 100%;
@@ -74,8 +73,8 @@
   }
 }
 
-/*---------------------Search bar--------------------------CR-*/
-
+/*---------------------Search bar---------------------------*/
+/*Concepteur Corentin Réngé*/
 .search {
   width: 100%;
   height: 100%;
@@ -134,7 +133,8 @@
 /*---------------------Fin Search Bar-------------------*/
 
 
-/*---------------------Footer-------------------------CR--*/
+/*---------------------Footer---------------------------*/
+/*Concepteur Corentin Réngé*/
 .float-right{
   margin-right: 0px;
   float: right;
@@ -180,7 +180,9 @@
 /*---------------------fin footer---------------------------*/
 
 
-/*---------------------Basic and font--------------------------CR-*/
+/*---------------------Basic and font-----------------------*/
+/*Concepteur Corentin Réngé*/
+/*Réjustement de certains élément de base, surtout pour le dynamisme de la page*/
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -250,7 +252,7 @@ summary
 }
 
 
-
+/*Changement des polices de bases*/
 @font-face
 {
   font-family: 'lato';
