@@ -23,7 +23,7 @@ function displayResult()
 }
 
 function displayAlert(){
-	alert("Nous sommes désolés, les informations supplémentaires sur le produit voulu ne peut s'afficher pour le moment. Nous sommes désolés du désagrément occasionné ");
+	alert("Nous sommes désolés, les informations supplémentaires sur le produit souhaité ne peuvent s'afficher pour le moment. Nous sommes désolés du désagrément occasionné. ");
 }
 
 
