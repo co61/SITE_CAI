@@ -1,5 +1,7 @@
-location.hash = "#fr";
+location.hash = "#fr"; //Initialisation du Hash pour la sélection de la langue
 
+
+// Initialisation des éléments contenant du texte à changer
 const langE1 = document.querySelector('#conteneur_vert2');
 var langwarp = document.querySelector('#conteneur_vert2');
 const link = langwarp.querySelectorAll('a');
@@ -8,6 +10,7 @@ const carte_rayonE1 = document.querySelector('#carte_rayon');
 const detail_produitE1 = document.querySelector('#detail_produit');
 const carte_magasinE1 = document.querySelector('#carte_magasin');
 
+// Eventlistener permettant le changement de langue
 link.forEach(el => {
 	el.addEventListener('click', () => {
 		langE1.querySelector('.active').classList.remove('active');
@@ -22,6 +25,7 @@ link.forEach(el => {
 	});
 });
 
+// Le texte chargée selon la langue
 var data = {
 			"français":
 			{
@@ -39,6 +43,7 @@ var data = {
 			}
 }
 
+// Fonction permettant l'affichage d'une alert personnalisée selon la langue sélectionnée
 function doSomething(){
 	if (location.hash === "#fr") {
 		alert("Préparez-vous ! Un conseiller arrive !");

@@ -1,4 +1,4 @@
-/* ------------------------------------------------------ Taff de CL -----------------------------------------------------*/
+/* Dans une première partie, les conteneurs*/
 
 #conteneur_vert1
 {
@@ -33,6 +33,8 @@
   justify-content: center;
   margin-top: 35px;
 }
+
+/* Puis les éléments affichés à l'écran */
 
 #message
 {
@@ -110,9 +112,9 @@
   margin : auto;
 }
 
+/*la couleur du body */
+
 body
 {
   background-color: #0076A680;
 }
-
-/* ------------------------------------------------------ Fin taff de CL -----------------------------------------------------*/
