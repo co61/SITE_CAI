@@ -10,9 +10,13 @@
         
     </head>
     <body>
-    <!-- My body contains 1 header, 1 footer and 2 sections between. Each with different divisions+ -->
 
+    <!-- Mon body contient 1 header, 1 footer et 2 sections entre. Chacun avec plusieurs divisions -->
         <!-- Header -->
+
+        <!-- Concepteurs : Corentin Régné(correction pour dynamisme) et Lénaël Jagline  -->
+        <!-- affichage (ou non) et lien de Home, BricoCasto et le nom du rayon -->
+
         <header class="layout-header">
             <div class="header">
                 <a href="../index.html" ><img src="../img/home.jpg" class="home"></a>
@@ -24,12 +28,12 @@
         </header>
 
         
-        <!-- Content -->
+        <!-- Contenu -->
 
-        <!-- Mains section -->
+        <!-- Section principale -->
         <section class="section">  
 
-            <!-- Search bar -->
+            <!-- bar de recherche -->
             <div class="wrap" >
                <div class="search" >
                     <input type="text" class="searchTerm" placeholder="Que recherchez-vous?" id="rechercheProduit">
@@ -37,7 +41,7 @@
             </div>
            
 
-            <!-- Use of materials -->
+            <!-- Utilisation -->
             <div class="filter">
                 <h4>
                     Utilisation
@@ -49,7 +53,7 @@
                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </div> 
 
-            <!-- Range -->
+            <!-- Gamme -->
             <div class="filter">
                 <h4>
                     Gamme
@@ -61,14 +65,14 @@
                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </div>   
 
-            <!-- Area -->
+            <!-- Surface -->
             <div class="filter">
                 <h4>
                     Surface
                 </h4>
                 <div class="Surface">
 
-                    <label for="surface">Surface de terrain</label><input type="text" name="surface">
+                    <label for="surface">Surface de terrain</label><input type="number" name="surface">
                     <select name="surface" id ="surface" title="1ha = 10 000m²">
                         <option value="m2" title="1ha = 10 000m²">m²</option>
                         <option value="ha" title="1ha = 10 000m²">ha</option>
@@ -76,7 +80,7 @@
                 </div>
             </div>     
 
-            <!-- Type of engine -->
+            <!-- Moteur -->
             <div class="filter">
                 <h4>
                     Moteur
@@ -88,7 +92,7 @@
                 </div>
             </div>  
 
-            <!-- Price -->
+            <!-- Prix -->
             <div class="filter">
                 <h4>
                     Prix
@@ -100,7 +104,7 @@
                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </div>     
 
-            <!-- User's rate -->
+            <!-- Notes des utilisateurs -->
             <div class="filter">
                 <h4>
                     Avis utilisateurs
@@ -124,14 +128,14 @@
                 </button>
             </div>
 
-        <!-- end of main section -->    
+        <!-- Fin de la section principale -->    
         </section>
 
 
-        <!-- Results of search -->
+        <!-- Résultats de recherche -->
         <section>
             <div class= "result">
-                <div class="resultat" >
+                <div class="resultat" onclick="displayAlert()" >
                     <h3 class="element">Meilleur Choix</h3>
                     <img src="../img/tronconneuse1.png"class="element" >
                     <div class="spec">
@@ -145,7 +149,7 @@
                     </div>
                 </div>
 
-                <div class="resultat" >
+                <div class="resultat" onclick="displayAlert()">
                     <h3 class="element">Second Meilleur Choix</h3>
                     <img src="../img/tronconneuse2.jfif"class="element" >
                     <div class="spec">
@@ -159,7 +163,7 @@
                     </div>
                 </div>
 
-                <div class="resultat" >
+                <div class="resultat" onclick="displayAlert()">
                     <h3 class="element">Troisième Meilleur Choix</h3>
                     <img src="../img/tronconneuse3.jpg"class="element" >
                     <div class="spec">
@@ -173,7 +177,8 @@
                     </div>
                 </div>
 
-                <div class="resultat" >
+                <!-- Submit -->
+                <div class="resultat" onclick="displayAlert()">
                     <h3 class="element">Tout Voir</h3>  
                     </div>
                 </div>
@@ -183,6 +188,9 @@
         
 
         <!-- Footer -->
+        <!-- Concepteur : Corentin Régné -->
+        <!-- footer dynamique mais comportant des limites pour la taille de fenêtre, affichage de la date, du nom du magasin, des noms des developpeurs
+         et de l'année de construction de l'interface -->
         <footer class="layout-footer">  
             <div class="footer">
                 <div class="container">
